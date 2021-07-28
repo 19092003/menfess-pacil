@@ -1,5 +1,4 @@
 import discord
-from keep_alive import keep_alive
 from discord.ext import commands
 from discord.utils import get
 import asyncio
@@ -54,8 +53,6 @@ async def menfess(ctx):
         await ctx.send('Baca DM bro', delete_after=5)
         await ctx.author.send('BOT hanya menerima menfess melalui DM', delete_after=10)
 
-# Supaya bot gak mati
-keep_alive()
 client.run('TOKEN')
 
 
